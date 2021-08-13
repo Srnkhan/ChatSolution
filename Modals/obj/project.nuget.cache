@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YVShhrhSFcaHLVVctZO8fPTiKezvewyheHVCM5PUjzisidFXe/16SzcB6+tioxWEuDOqacX2J53Mmf7XT3QzKg==",
+  "dgSpecHash": "8rX4fCoth3R4CFw0wqhOu1e1Z+qofdTAXFEgfZYSkKC2CIpJZxYtyRpGNiis3wc7QZXlvCv1X26/xlDDwBUf6Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hkhaa\\source\\repos\\ChatSolution\\Modals\\Modals.csproj",
+  "projectFilePath": "C:\\Users\\hkhaa\\source\\repos\\ChatSolution\\Modals\\ChatModals.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

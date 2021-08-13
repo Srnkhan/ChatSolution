@@ -1,0 +1,16 @@
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\bin\Debug\netcoreapp3.1\ChatServices.deps.json
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\bin\Debug\netcoreapp3.1\ChatServices.dll
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\bin\Debug\netcoreapp3.1\ChatServices.pdb
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\bin\Debug\netcoreapp3.1\ChatCore.dll
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\bin\Debug\netcoreapp3.1\ChatDb.dll
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\bin\Debug\netcoreapp3.1\ChatModals.dll
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\bin\Debug\netcoreapp3.1\ChatDb.pdb
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\bin\Debug\netcoreapp3.1\ChatCore.pdb
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\bin\Debug\netcoreapp3.1\ChatModals.pdb
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\obj\Debug\netcoreapp3.1\ChatServices.csprojAssemblyReference.cache
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\obj\Debug\netcoreapp3.1\ChatServices.AssemblyInfoInputs.cache
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\obj\Debug\netcoreapp3.1\ChatServices.AssemblyInfo.cs
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\obj\Debug\netcoreapp3.1\ChatServices.csproj.CoreCompileInputs.cache
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\obj\Debug\netcoreapp3.1\ChatServices.csproj.CopyComplete
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\obj\Debug\netcoreapp3.1\ChatServices.dll
+C:\Users\hkhaa\source\repos\ChatSolution\ChatServices\obj\Debug\netcoreapp3.1\ChatServices.pdb

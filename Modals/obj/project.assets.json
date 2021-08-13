@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hkhaa\\source\\repos\\ChatSolution\\Modals\\Modals.csproj",
-      "projectName": "Modals",
-      "projectPath": "C:\\Users\\hkhaa\\source\\repos\\ChatSolution\\Modals\\Modals.csproj",
+      "projectUniqueName": "C:\\Users\\hkhaa\\source\\repos\\ChatSolution\\Modals\\ChatModals.csproj",
+      "projectName": "ChatModals",
+      "projectPath": "C:\\Users\\hkhaa\\source\\repos\\ChatSolution\\Modals\\ChatModals.csproj",
       "packagesPath": "C:\\Users\\hkhaa\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\hkhaa\\source\\repos\\ChatSolution\\Modals\\obj\\",
       "projectStyle": "PackageReference",

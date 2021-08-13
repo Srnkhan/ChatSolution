@@ -3,24 +3,64 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatMvc", "ChatMvc\ChatMvc.csproj", "{0520BB88-4A72-4960-9321-17672A5D3851}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatMvc", "ChatMvc\ChatMvc.csproj", "{0520BB88-4A72-4960-9321-17672A5D3851}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modals", "Modals\Modals.csproj", "{37F8A616-7A9A-4E20-92EA-DAAE8224BB06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatModals", "Modals\ChatModals.csproj", "{37F8A616-7A9A-4E20-92EA-DAAE8224BB06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatCore", "ChatCore\ChatCore.csproj", "{F3ACD06B-8BB8-480B-84F5-07DFA070AB9B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatDb", "ChatDb\ChatDb.csproj", "{04DC83A5-0704-43C1-BA78-35C08D222623}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatServices", "ChatServices\ChatServices.csproj", "{35C2B8DF-42F5-44AE-81D6-B0D758D595C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		DebugMySql|Any CPU = DebugMySql|Any CPU
 		Release|Any CPU = Release|Any CPU
+		ReleaseMySql|Any CPU = ReleaseMySql|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0520BB88-4A72-4960-9321-17672A5D3851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0520BB88-4A72-4960-9321-17672A5D3851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0520BB88-4A72-4960-9321-17672A5D3851}.DebugMySql|Any CPU.ActiveCfg = DebugMySql|Any CPU
+		{0520BB88-4A72-4960-9321-17672A5D3851}.DebugMySql|Any CPU.Build.0 = DebugMySql|Any CPU
 		{0520BB88-4A72-4960-9321-17672A5D3851}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0520BB88-4A72-4960-9321-17672A5D3851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0520BB88-4A72-4960-9321-17672A5D3851}.ReleaseMySql|Any CPU.ActiveCfg = ReleaseMySql|Any CPU
+		{0520BB88-4A72-4960-9321-17672A5D3851}.ReleaseMySql|Any CPU.Build.0 = ReleaseMySql|Any CPU
 		{37F8A616-7A9A-4E20-92EA-DAAE8224BB06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{37F8A616-7A9A-4E20-92EA-DAAE8224BB06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37F8A616-7A9A-4E20-92EA-DAAE8224BB06}.DebugMySql|Any CPU.ActiveCfg = DebugMySql|Any CPU
+		{37F8A616-7A9A-4E20-92EA-DAAE8224BB06}.DebugMySql|Any CPU.Build.0 = DebugMySql|Any CPU
 		{37F8A616-7A9A-4E20-92EA-DAAE8224BB06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37F8A616-7A9A-4E20-92EA-DAAE8224BB06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37F8A616-7A9A-4E20-92EA-DAAE8224BB06}.ReleaseMySql|Any CPU.ActiveCfg = ReleaseMySql|Any CPU
+		{37F8A616-7A9A-4E20-92EA-DAAE8224BB06}.ReleaseMySql|Any CPU.Build.0 = ReleaseMySql|Any CPU
+		{F3ACD06B-8BB8-480B-84F5-07DFA070AB9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3ACD06B-8BB8-480B-84F5-07DFA070AB9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3ACD06B-8BB8-480B-84F5-07DFA070AB9B}.DebugMySql|Any CPU.ActiveCfg = DebugMySql|Any CPU
+		{F3ACD06B-8BB8-480B-84F5-07DFA070AB9B}.DebugMySql|Any CPU.Build.0 = DebugMySql|Any CPU
+		{F3ACD06B-8BB8-480B-84F5-07DFA070AB9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3ACD06B-8BB8-480B-84F5-07DFA070AB9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3ACD06B-8BB8-480B-84F5-07DFA070AB9B}.ReleaseMySql|Any CPU.ActiveCfg = ReleaseMySql|Any CPU
+		{F3ACD06B-8BB8-480B-84F5-07DFA070AB9B}.ReleaseMySql|Any CPU.Build.0 = ReleaseMySql|Any CPU
+		{04DC83A5-0704-43C1-BA78-35C08D222623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04DC83A5-0704-43C1-BA78-35C08D222623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04DC83A5-0704-43C1-BA78-35C08D222623}.DebugMySql|Any CPU.ActiveCfg = DebugMySql|Any CPU
+		{04DC83A5-0704-43C1-BA78-35C08D222623}.DebugMySql|Any CPU.Build.0 = DebugMySql|Any CPU
+		{04DC83A5-0704-43C1-BA78-35C08D222623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04DC83A5-0704-43C1-BA78-35C08D222623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04DC83A5-0704-43C1-BA78-35C08D222623}.ReleaseMySql|Any CPU.ActiveCfg = ReleaseMySql|Any CPU
+		{04DC83A5-0704-43C1-BA78-35C08D222623}.ReleaseMySql|Any CPU.Build.0 = ReleaseMySql|Any CPU
+		{35C2B8DF-42F5-44AE-81D6-B0D758D595C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C2B8DF-42F5-44AE-81D6-B0D758D595C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C2B8DF-42F5-44AE-81D6-B0D758D595C0}.DebugMySql|Any CPU.ActiveCfg = DebugMySql|Any CPU
+		{35C2B8DF-42F5-44AE-81D6-B0D758D595C0}.DebugMySql|Any CPU.Build.0 = DebugMySql|Any CPU
+		{35C2B8DF-42F5-44AE-81D6-B0D758D595C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C2B8DF-42F5-44AE-81D6-B0D758D595C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35C2B8DF-42F5-44AE-81D6-B0D758D595C0}.ReleaseMySql|Any CPU.ActiveCfg = ReleaseMySql|Any CPU
+		{35C2B8DF-42F5-44AE-81D6-B0D758D595C0}.ReleaseMySql|Any CPU.Build.0 = ReleaseMySql|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

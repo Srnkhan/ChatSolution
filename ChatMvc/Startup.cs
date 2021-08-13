@@ -1,3 +1,5 @@
+using ChatDb;
+using ChatDb.UnitOfWork;
 using ChatMvc.Hubs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,6 +28,8 @@ namespace ChatMvc
         {
             services.AddControllersWithViews();
             services.AddSignalR();
+            services.AddScoped<IUnitOfWork, EFUnitOfWork>();
+            services.AddScoped<MainDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

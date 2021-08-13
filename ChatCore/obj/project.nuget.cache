@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "QUS1zfSmZY2r+moCvYvkzoKRgeUqmbz3NppCsN9Ht8azohSZezgUZKpCRDp7eWy3UN1aLvfP8K8aSb3HbbOg5Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hkhaa\\source\\repos\\ChatSolution\\ChatCore\\ChatCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hkhaa\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.7\\microsoft.extensions.configuration.3.1.7.nupkg.sha512",
+    "C:\\Users\\hkhaa\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.7\\microsoft.extensions.configuration.abstractions.3.1.7.nupkg.sha512",
+    "C:\\Users\\hkhaa\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\3.1.7\\microsoft.extensions.configuration.fileextensions.3.1.7.nupkg.sha512",
+    "C:\\Users\\hkhaa\\.nuget\\packages\\microsoft.extensions.configuration.json\\3.1.7\\microsoft.extensions.configuration.json.3.1.7.nupkg.sha512",
+    "C:\\Users\\hkhaa\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.7\\microsoft.extensions.fileproviders.abstractions.3.1.7.nupkg.sha512",
+    "C:\\Users\\hkhaa\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.7\\microsoft.extensions.fileproviders.physical.3.1.7.nupkg.sha512",
+    "C:\\Users\\hkhaa\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.7\\microsoft.extensions.filesystemglobbing.3.1.7.nupkg.sha512",
+    "C:\\Users\\hkhaa\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.7\\microsoft.extensions.primitives.3.1.7.nupkg.sha512"
+  ],
+  "logs": []
+}
