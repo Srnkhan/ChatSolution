@@ -1,0 +1,9 @@
+C:\Users\hkhaa\source\repos\ChatSolution\Modals\bin\Debug\netcoreapp3.1\Modals.deps.json
+C:\Users\hkhaa\source\repos\ChatSolution\Modals\bin\Debug\netcoreapp3.1\Modals.dll
+C:\Users\hkhaa\source\repos\ChatSolution\Modals\bin\Debug\netcoreapp3.1\Modals.pdb
+C:\Users\hkhaa\source\repos\ChatSolution\Modals\obj\Debug\netcoreapp3.1\Modals.csprojAssemblyReference.cache
+C:\Users\hkhaa\source\repos\ChatSolution\Modals\obj\Debug\netcoreapp3.1\Modals.AssemblyInfoInputs.cache
+C:\Users\hkhaa\source\repos\ChatSolution\Modals\obj\Debug\netcoreapp3.1\Modals.AssemblyInfo.cs
+C:\Users\hkhaa\source\repos\ChatSolution\Modals\obj\Debug\netcoreapp3.1\Modals.csproj.CoreCompileInputs.cache
+C:\Users\hkhaa\source\repos\ChatSolution\Modals\obj\Debug\netcoreapp3.1\Modals.dll
+C:\Users\hkhaa\source\repos\ChatSolution\Modals\obj\Debug\netcoreapp3.1\Modals.pdb
