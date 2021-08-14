@@ -12,7 +12,7 @@ namespace ChatDb.Repository
         /// Get All Data
         /// </summary>
         /// <returns></returns>
-        IQueryable GetAll();
+        IQueryable<T> GetAll();
 
         /// <summary>
         /// Get All Data with Predicate

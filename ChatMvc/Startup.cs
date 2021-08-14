@@ -1,6 +1,8 @@
 using ChatDb;
 using ChatDb.UnitOfWork;
 using ChatMvc.Hubs;
+using ChatServices.Abstractions;
+using ChatServices.Implementations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,6 +31,7 @@ namespace ChatMvc
             services.AddControllersWithViews();
             services.AddSignalR();
             services.AddScoped<IUnitOfWork, EFUnitOfWork>();
+            services.AddScoped<IChatService , ChatImplementation>();
             services.AddScoped<MainDbContext>();
         }
 

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5dp5zdmQg7mQPzRrCrk46FVKP4fqOWV0xYtT1H95I/BXsdm44NojLtghtddIH1RkNLa0aM2XCJEqlj9hLnM+5w==",
+  "dgSpecHash": "XG3Qen7vK6AslFBulBBnspzyWxgZEe4JgvO5vVedo/5uWsvWA1+cRsOlxI+Kv4fbF1vgYloDTFd7CVj5VZd7AA==",
   "success": true,
   "projectFilePath": "C:\\Users\\hkhaa\\source\\repos\\ChatSolution\\ChatDb\\ChatDb.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\hkhaa\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\hkhaa\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\hkhaa\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\hkhaa\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -74,7 +75,7 @@
     "C:\\Users\\hkhaa\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\hkhaa\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",
     "C:\\Users\\hkhaa\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
-    "C:\\Users\\hkhaa\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\hkhaa\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\hkhaa\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\hkhaa\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
     "C:\\Users\\hkhaa\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",

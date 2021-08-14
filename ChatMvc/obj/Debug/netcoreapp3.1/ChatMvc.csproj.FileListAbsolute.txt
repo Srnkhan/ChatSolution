@@ -90,3 +90,4 @@ C:\Users\hkhaa\source\repos\ChatSolution\ChatMvc\obj\Debug\netcoreapp3.1\ChatMvc
 C:\Users\hkhaa\source\repos\ChatSolution\ChatMvc\obj\Debug\netcoreapp3.1\ChatMvc.pdb
 C:\Users\hkhaa\source\repos\ChatSolution\ChatMvc\obj\Debug\netcoreapp3.1\ChatMvc.genruntimeconfig.cache
 C:\Users\hkhaa\source\repos\ChatSolution\ChatMvc\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\hkhaa\source\repos\ChatSolution\ChatMvc\bin\Debug\netcoreapp3.1\AutoMapper.dll

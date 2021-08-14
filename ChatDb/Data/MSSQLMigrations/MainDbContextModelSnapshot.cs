@@ -28,7 +28,7 @@ namespace ChatDb.Data.MSSQLMigrations
                     b.Property<string>("ChannelName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("UpdateDate")
@@ -42,33 +42,55 @@ namespace ChatDb.Data.MSSQLMigrations
                         new
                         {
                             Id = new Guid("22a1d9b0-f452-46e3-9e4a-e13739ab1dd9"),
-                            ChannelName = "First Channel",
-                            CreatedDate = new DateTime(2021, 8, 14, 1, 16, 52, 93, DateTimeKind.Local).AddTicks(8517)
+                            ChannelName = "First Channel"
                         },
                         new
                         {
                             Id = new Guid("86c3c0d1-7d93-4286-9f39-acd12983dc07"),
-                            ChannelName = "Second Channel",
-                            CreatedDate = new DateTime(2021, 8, 14, 1, 16, 52, 97, DateTimeKind.Local).AddTicks(7749)
+                            ChannelName = "Second Channel"
                         },
                         new
                         {
                             Id = new Guid("3ce2a3be-93b3-45d6-97fa-22600e7f5a91"),
-                            ChannelName = "Third Channel",
-                            CreatedDate = new DateTime(2021, 8, 14, 1, 16, 52, 97, DateTimeKind.Local).AddTicks(8165)
+                            ChannelName = "Third Channel"
                         },
                         new
                         {
                             Id = new Guid("5feb5b2a-8d19-40f6-b142-6d6e26849a5c"),
-                            ChannelName = "Fourth Channel",
-                            CreatedDate = new DateTime(2021, 8, 14, 1, 16, 52, 97, DateTimeKind.Local).AddTicks(8240)
+                            ChannelName = "Fourth Channel"
                         },
                         new
                         {
                             Id = new Guid("699e8187-5ff9-4f58-befe-a3d8e2a2bdc8"),
-                            ChannelName = "Fifth Channel",
-                            CreatedDate = new DateTime(2021, 8, 14, 1, 16, 52, 97, DateTimeKind.Local).AddTicks(8309)
+                            ChannelName = "Fifth Channel"
                         });
+                });
+
+            modelBuilder.Entity("ChatModals.DbModal.ChannelMessage", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ChannelId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("MessageId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("UpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ChannelId");
+
+                    b.HasIndex("MessageId");
+
+                    b.ToTable("ChannelMessage");
                 });
 
             modelBuilder.Entity("ChatModals.DbModal.Message", b =>
@@ -77,7 +99,7 @@ namespace ChatDb.Data.MSSQLMigrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("UpdateDate")
@@ -92,6 +114,21 @@ namespace ChatDb.Data.MSSQLMigrations
                     b.HasKey("Id");
 
                     b.ToTable("Message");
+                });
+
+            modelBuilder.Entity("ChatModals.DbModal.ChannelMessage", b =>
+                {
+                    b.HasOne("ChatModals.DbModal.Channel", "Channel")
+                        .WithMany("ChannelMessages")
+                        .HasForeignKey("ChannelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ChatModals.DbModal.Message", "Message")
+                        .WithMany("ChannelMessages")
+                        .HasForeignKey("MessageId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,5 @@
 ﻿using ChatMvc.Hubs;
+using ChatServices.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Modals.Dto;
@@ -12,21 +13,25 @@ namespace ChatMvc.Controllers
     public class ChatController : Controller
     {
         private readonly IHubContext<Chat1Hub> _chatHub;
-        public ChatController(IHubContext<Chat1Hub> chatHub)
+        private readonly IChatService _chatService;
+        public ChatController(IHubContext<Chat1Hub> chatHub, IChatService chatService)
         {
             _chatHub = chatHub;
+            _chatService = chatService;
         }
         public IActionResult Index()
         {
-            return View();
+            var chatViewDto = _chatService.GetChatViewDto();
+            return View(chatViewDto);
         }
 
         
         [HttpPost]
-        public IActionResult Message([FromBody] MessageDto order)
+        public IActionResult Message([FromBody] MessageDto message)
         {
             //same bussines rules
-            _chatHub.Clients.All.SendAsync("message", order);
+            _chatService.ChatListener(message);
+            _chatHub.Clients.All.SendAsync("message", message);
 
             return Accepted();
         }

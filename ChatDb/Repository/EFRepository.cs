@@ -18,6 +18,7 @@ namespace ChatDb.Repository
         }
         public void Add(T entity)
         {
+            entity.Id = Guid.NewGuid();
             _dbSet.Add(entity);
         }
 
@@ -37,7 +38,7 @@ namespace ChatDb.Repository
             return _dbSet.Where(predicate)?.FirstOrDefault();
         }
 
-        public IQueryable GetAll()
+        public IQueryable<T> GetAll()
         {
             return _dbSet;
         }

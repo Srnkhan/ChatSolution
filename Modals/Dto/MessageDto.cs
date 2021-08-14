@@ -8,5 +8,6 @@ namespace Modals.Dto
     {
         public string Message { get; set; }
         public string Name { get; set; }
+        public string Channel{ get; set; }
     }
 }

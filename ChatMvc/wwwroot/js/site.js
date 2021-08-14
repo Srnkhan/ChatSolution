@@ -18,11 +18,14 @@ function Initialize() {
 
 function setUpConnection() {
     var connection = new signalR.HubConnectionBuilder().withUrl(hubUrl).build();
-    connection.on("message", function (messageDto) {        
-        let currentMessage = hub1_messageDisplayBodyDoc.innerHTML;
-        currentMessage += "<b>" + messageDto.name + ":" + "</b>" +
-        "<p>" + messageDto.message + "</p>" + "<br/>";
-        hub1_messageDisplayBodyDoc.innerHTML = currentMessage;
+    connection.on("message", function (messageDto) {
+        let userChannel = localStorage.getItem("user_channel");
+        if (userChannel === messageDto.channel) {
+            let currentMessage = hub1_messageDisplayBodyDoc.innerHTML;
+            currentMessage += "<b>" + messageDto.name + ":" + "</b>" +
+                "<p>" + messageDto.message + "</p>" + "<br/>";
+            hub1_messageDisplayBodyDoc.innerHTML = currentMessage;
+        }        
     });
     connection
         .start()
@@ -35,21 +38,24 @@ function setUpConnection() {
     });
 }
 async function sendMessage() {    
-    let message = hub1_messageDoc.value;
-    let name = localStorage.getItem("user");
-    hub1_messageDoc.value = "";
-    let res = await fetch("/Chat/Message", {
-        method: "POST",
-        body: JSON.stringify({
-            name,message
-        }),
-        headers: {
-            'content-type': 'application/json'
-        }
-    })    
+    let isSendable = userCheck();
+    if (isSendable) {
+        let message = hub1_messageDoc.value;
+        let name = localStorage.getItem("user");
+        let channel = localStorage.getItem("user_channel");
+        hub1_messageDoc.value = "";
+        let res = await fetch("/Chat/Message", {
+            method: "POST",
+            body: JSON.stringify({
+                name, message, channel
+            }),
+            headers: {
+                'content-type': 'application/json'
+            }
+        })
+    }
 }
-function setNickName() {
-    debugger;
+function setNickName() {    
     let nickName = userNickNameDoc.value;
     if (nickName !== '') {
         let nickName = userNickNameDoc.value;
@@ -64,11 +70,25 @@ function setNickName() {
     
 }
 function userCheck() {    
-    let currentUser = localStorage.getItem("user");
-    if (currentUser !== '') {
-        userModalDoc.style.display = "block";
+    let currentUser = localStorage.getItem("user");    
+    if (currentUser && currentUser !== '') {
+        userModalDoc.style.display = "none";
+        return true;
     }
     else {
-        userModalDoc.style.display = "none";
+        userModalDoc.style.display = "block";
+        return false;
     }
+}
+
+function setChannel() {    
+    debugger;
+    let previousId = localStorage.getItem("user_channel");
+    let currentTarget = event.currentTarget;
+    let id = currentTarget.id;
+    currentTarget.className = "list-group-item list-group-item-action active"
+    if (previousId && previousId !== '') {
+        document.getElementById(previousId).className = "list-group-item list-group-item-action";
+    }
+    localStorage.setItem("user_channel", id);
 }

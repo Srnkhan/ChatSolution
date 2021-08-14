@@ -8,5 +8,7 @@ namespace ChatModals.DbModal
     {
         public string ChannelName { get; set; }
 
+        public ICollection<ChannelMessage> ChannelMessages { get; set; }
+
     }
 }
