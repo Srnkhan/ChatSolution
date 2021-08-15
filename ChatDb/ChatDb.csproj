@@ -22,9 +22,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Data\MSSQLMigrations\20210814103155_002.cs" />
-    <Compile Remove="Data\MSSQLMigrations\20210814103155_002.Designer.cs" />
+    <Compile Remove="Data\MSSQLMigrations\**" />
+    <EmbeddedResource Remove="Data\MSSQLMigrations\**" />
+    <None Remove="Data\MSSQLMigrations\**" />
   </ItemGroup>
+
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
@@ -33,6 +36,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
   </ItemGroup>
 
   <ItemGroup>

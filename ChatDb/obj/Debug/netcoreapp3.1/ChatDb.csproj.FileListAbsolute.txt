@@ -1,0 +1,5 @@
+C:\Users\hkhaa\source\repos\ChatSolution\ChatDb\bin\Debug\netcoreapp3.1\ChatCore.dll
+C:\Users\hkhaa\source\repos\ChatSolution\ChatDb\bin\Debug\netcoreapp3.1\ChatModals.dll
+C:\Users\hkhaa\source\repos\ChatSolution\ChatDb\obj\Debug\netcoreapp3.1\ChatDb.csprojAssemblyReference.cache
+C:\Users\hkhaa\source\repos\ChatSolution\ChatDb\obj\Debug\netcoreapp3.1\ChatDb.AssemblyInfoInputs.cache
+C:\Users\hkhaa\source\repos\ChatSolution\ChatDb\obj\Debug\netcoreapp3.1\ChatDb.AssemblyInfo.cs
