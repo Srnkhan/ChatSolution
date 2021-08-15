@@ -24,14 +24,15 @@ namespace ChatDb
             optionsBuilder.UseSqlServer(_connectionString);
 #endif
 #if Release
-    //asd
+            optionsBuilder.UseSqlServer(_connectionString);
 #endif
 #if DebugMySql
-            optionsBuilder.UseMySql(connectionString: _connectionString,            
+            optionsBuilder.UseMySql(connectionString: _connectionString,
             mySqlOptions => mySqlOptions.CharSetBehavior(CharSetBehavior.NeverAppend));
 #endif
 #if ReleaseMySql
-       //asd     
+       optionsBuilder.UseMySql(connectionString: _connectionString,            
+            mySqlOptions => mySqlOptions.CharSetBehavior(CharSetBehavior.NeverAppend));
 #endif
 
         }
