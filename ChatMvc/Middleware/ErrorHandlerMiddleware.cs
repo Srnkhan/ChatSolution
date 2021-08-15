@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,12 +12,18 @@ namespace ChatMvc.Middleware
     public class ErrorHandlerMiddleware
     {
         private readonly RequestDelegate _next;
-        public ErrorHandlerMiddleware(RequestDelegate next)
+        private readonly ILoggerFactory _loggerFactory;
+
+
+        public ErrorHandlerMiddleware(RequestDelegate next , ILoggerFactory logger)
         {
             _next = next;
+            _loggerFactory = logger;
         }
         public async Task Invoke(HttpContext context)
         {
+            var _logger = _loggerFactory.CreateLogger<ErrorHandlerMiddleware>();
+
             try
             {
                 await _next(context);
@@ -26,6 +33,7 @@ namespace ChatMvc.Middleware
                 var response = context.Response;
                 response.ContentType = "application/json";
                 response.StatusCode = (int)HttpStatusCode.BadRequest;
+                _logger.LogError($"Something went wrong: {ex.Message}");
                 response.Redirect("/Error/Index");
             }
         }
