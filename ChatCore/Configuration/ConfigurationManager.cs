@@ -39,6 +39,23 @@ namespace ChatCore.Configuration
 #endif
             return connectionString;
         }
+        public string GetRedisConnectionString()
+        {
+            string connectionString = "";
+#if DEBUG || DebugMySql
+            connectionString = root.GetSection("RedisConnectionDebug").GetSection("DataConnection").Value;
+#endif
+#if Release || ReleaseMySql
+            connectionString = root.GetSection("RedisConnectionRelease").GetSection("DataConnection").Value;
+#endif
+            return connectionString;
+        }
+        public int GetRedisConnectionExpireTime()
+        {
+            var connectionString = root.GetSection("Configuration").GetSection("RedisCacheExpire").Value;
+
+            return Convert.ToInt32(connectionString);
+        }
     }
 }
 

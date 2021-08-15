@@ -82,11 +82,11 @@ function userCheck() {
 }
 
 function setChannel() {    
-    debugger;
     let previousId = localStorage.getItem("user_channel");
     let currentTarget = event.currentTarget;
     let id = currentTarget.id;
     currentTarget.className = "list-group-item list-group-item-action active"
+    hub1_messageDisplayBodyDoc.innerHTML = "";
     if (previousId && previousId !== '') {
         document.getElementById(previousId).className = "list-group-item list-group-item-action";
     }

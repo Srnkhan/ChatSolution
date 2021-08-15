@@ -1,0 +1,12 @@
+C:\Users\hkhaa\source\repos\ChatSolution\ChatCore\bin\ReleaseMySql\netcoreapp3.1\ChatCore.deps.json
+C:\Users\hkhaa\source\repos\ChatSolution\ChatCore\bin\ReleaseMySql\netcoreapp3.1\ChatCore.dll
+C:\Users\hkhaa\source\repos\ChatSolution\ChatCore\bin\ReleaseMySql\netcoreapp3.1\ChatCore.pdb
+C:\Users\hkhaa\source\repos\ChatSolution\ChatCore\bin\ReleaseMySql\netcoreapp3.1\ChatModals.dll
+C:\Users\hkhaa\source\repos\ChatSolution\ChatCore\bin\ReleaseMySql\netcoreapp3.1\ChatModals.pdb
+C:\Users\hkhaa\source\repos\ChatSolution\ChatCore\obj\ReleaseMySql\netcoreapp3.1\ChatCore.csprojAssemblyReference.cache
+C:\Users\hkhaa\source\repos\ChatSolution\ChatCore\obj\ReleaseMySql\netcoreapp3.1\ChatCore.AssemblyInfoInputs.cache
+C:\Users\hkhaa\source\repos\ChatSolution\ChatCore\obj\ReleaseMySql\netcoreapp3.1\ChatCore.AssemblyInfo.cs
+C:\Users\hkhaa\source\repos\ChatSolution\ChatCore\obj\ReleaseMySql\netcoreapp3.1\ChatCore.csproj.CoreCompileInputs.cache
+C:\Users\hkhaa\source\repos\ChatSolution\ChatCore\obj\ReleaseMySql\netcoreapp3.1\ChatCore.csproj.CopyComplete
+C:\Users\hkhaa\source\repos\ChatSolution\ChatCore\obj\ReleaseMySql\netcoreapp3.1\ChatCore.dll
+C:\Users\hkhaa\source\repos\ChatSolution\ChatCore\obj\ReleaseMySql\netcoreapp3.1\ChatCore.pdb

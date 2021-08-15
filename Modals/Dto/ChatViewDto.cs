@@ -8,5 +8,9 @@ namespace ChatModals.Dto
     {
         public List<ChannelDto> ChannelList { get; set; }
 
+        public ChatViewDto()
+        {
+            ChannelList = new List<ChannelDto>();
+        }
     }
 }

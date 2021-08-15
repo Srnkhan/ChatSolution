@@ -1,3 +1,4 @@
+using ChatCore.Configuration;
 using ChatDb;
 using ChatDb.UnitOfWork;
 using ChatMvc.Hubs;
@@ -5,6 +6,7 @@ using ChatServices.Abstractions;
 using ChatServices.Implementations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,9 +31,16 @@ namespace ChatMvc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDistributedRedisCache(options =>
+            {
+                options.InstanceName = "RedisNetCoreSample";
+                options.Configuration = ConfigurationManager.GetInstance().GetRedisConnectionString(); 
+            });
             services.AddSignalR();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped<IUnitOfWork, EFUnitOfWork>();
             services.AddScoped<IChatService , ChatImplementation>();
+            services.AddScoped<IRedisService, RedisImplementation>();
             services.AddScoped<MainDbContext>();
         }
 
@@ -48,6 +57,7 @@ namespace ChatMvc
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -58,10 +68,10 @@ namespace ChatMvc
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapHub<Chat1Hub>("/chat1hub");
-
+                
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Chat}/{action=Index}/{id?}");
             });
         }
     }

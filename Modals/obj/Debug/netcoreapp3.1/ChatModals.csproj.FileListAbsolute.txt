@@ -1,8 +1,0 @@
-C:\Users\hkhaa\source\repos\ChatSolution\Modals\bin\Debug\netcoreapp3.1\ChatModals.deps.json
-C:\Users\hkhaa\source\repos\ChatSolution\Modals\bin\Debug\netcoreapp3.1\ChatModals.dll
-C:\Users\hkhaa\source\repos\ChatSolution\Modals\bin\Debug\netcoreapp3.1\ChatModals.pdb
-C:\Users\hkhaa\source\repos\ChatSolution\Modals\obj\Debug\netcoreapp3.1\ChatModals.AssemblyInfoInputs.cache
-C:\Users\hkhaa\source\repos\ChatSolution\Modals\obj\Debug\netcoreapp3.1\ChatModals.AssemblyInfo.cs
-C:\Users\hkhaa\source\repos\ChatSolution\Modals\obj\Debug\netcoreapp3.1\ChatModals.csproj.CoreCompileInputs.cache
-C:\Users\hkhaa\source\repos\ChatSolution\Modals\obj\Debug\netcoreapp3.1\ChatModals.dll
-C:\Users\hkhaa\source\repos\ChatSolution\Modals\obj\Debug\netcoreapp3.1\ChatModals.pdb
